@@ -15,7 +15,7 @@ class RestInterface:
 
     @property
     def url(self) -> str:
-        return f"http://{self.creds.socket}/interface"
+        return f"http://{self.creds.socket}/restinterface"
 
     @property
     def auth(self) -> tuple[str, str]:
