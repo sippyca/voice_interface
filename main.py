@@ -6,6 +6,7 @@ rest_interface = (interfaces.RestInterface(creds))
 
 
 def get_channel():
+    """Get channel information for channel 123456 from the Rest interface."""
     channel_id: str = "123456"
     channel = channels.Channel(rest_interface, channel_id)
     r = channel.get()
